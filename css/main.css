@@ -1,6 +1,75 @@
-* {
+/* Import Fonts from Google */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/* Full-Page Formatting */
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+}
+body {
+    font-family: 
+        Arial, Helvetica, sans-serif;
+    font: 
+        normal 100%/150% "Josefin-sans", "helvetica neue", Helvetic, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: goldenrod;
+    width: 100%;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40 0 40px;
+}
+ .text_click {
+    text-decoration-line: none;
+    color: white;
+}
+nav li {
+    list-style: none;
+}
+ .title {
+     width: 100%;
+     height: 5em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rosybrown;
+ }
+
+.whole {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+
+.paragraphs_1-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lead-content {
+    margin: 1em;
+}
+
+
+
+.panda-icon {
+    width: 111px;
+    height: 128px;
 }
 
 /* Mobile Styles */
@@ -21,6 +90,10 @@
     body {
         background-color: yellow;
     }
+    .lead-content {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
 }
 
@@ -33,5 +106,14 @@
 @media only screen and (min-width: 961px) {
     body {
         background-color: skyblue;
+        width: 960px;
+        margin: 0 auto;
+    }
+    .lead-content {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    nav {
+        justify-content: flex-end;
     }
 }
