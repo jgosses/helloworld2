@@ -9,17 +9,21 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
     padding: 0;
 }
 body {
-    font-family: 
-        Arial, Helvetica, sans-serif;
-    font: 
-        normal 100%/150% "Josefin-sans", "helvetica neue", Helvetic, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal 100%/150% "Josefin-sans", "helvetica neue", Helvetic, Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+h1, h2, h3 {
+    font-family: "Josefin Slab", Arial, serif;
+    font-weight: bold;
 }
 
 header {
     width: 100%;
-    
 }
 
 nav ul {
@@ -52,19 +56,8 @@ nav li {
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: rosybrown;
+     background-color: rgb(95, 141, 77);
  }
-
-.whole {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    
-}
-
-
 
 .paragraphs_1-3 {
     display: flex;
@@ -91,10 +84,31 @@ nav li {
     height: 128px;
 }
 
+.paragraph-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 .5em 0;
+}
+.html-icon {
+    width: 71.25px;
+    height: 66px;
+}
+
+.css-icon {
+    width: 74px;
+    height: 64.75px;
+}
+
+.js-icon {
+    width: 64px;
+    height: 64px;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
     body {
-        background-color: red;
+        background-color: rgb(46, 112, 173);
     }
 }
 
@@ -127,14 +141,16 @@ nav li {
     h2 {
         padding: 0 0 1em 0;
         height: 40px;
+
     }
     .paragraphs_1-3 {
         width: 33.33%;
-        padding: 0 0 0 .5em;
+        padding: 0 .5em 0 .5em;
     }
     .icon-nav {
         display: flex;
         flex-wrap: nowrap;
+        align-items: flex-start;
         justify-content: space-between;
         margin: 0em;
     }
@@ -155,18 +171,7 @@ nav li {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     body {
-        background-color: skyblue;
-        width: 960px;
-        margin: 0 auto;
-    }
-    .lead-content {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    h2 {
-        padding: 0 0 1em 0;
-        height: 40px;
+        background-color: white;
     }
     nav {
         display: flex;
@@ -192,6 +197,18 @@ nav li {
         justify-content: flex-start;
         padding: 0 0 .5em .5em;
     }
+    
+    .lead-content {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
+    h2 {
+        padding: 0 0 1em 0;
+        height: 40px;
+    }
+    .paragraphs_1-3 {
+        margin: 0 1 0 1em;
+    }
 
 }
