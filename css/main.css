@@ -97,10 +97,19 @@ nav li {
     body {
         background-color: yellow;
     }
+   
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        padding: 0 .5em;
+        margin: .5em;
+    }
+
     .lead-content {
         display: flex;
         flex-wrap: nowrap;
-        height: 600px;
+        height: 250px;
     }
     
     h2 {
