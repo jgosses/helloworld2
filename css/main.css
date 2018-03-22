@@ -39,9 +39,12 @@ nav ul {
 .option a {
     color: white;
 }
+
 nav li {
+    padding: 0 .5em;
+    margin: .5em;
     list-style: none;
-    
+    background-color: goldenrod;
 }
  .title {
      width: 100%;
@@ -72,9 +75,18 @@ nav li {
     margin: 1em;
 }
 
-
-
+.icon-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 .panda-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.actual-panda-icon {
     width: 111px;
     height: 128px;
 }
@@ -103,7 +115,7 @@ nav li {
     }
     nav li {
         padding: 0 .5em;
-        margin: .5em;
+        margin: .4em;
     }
 
     .lead-content {
@@ -120,7 +132,20 @@ nav li {
         width: 33.33%;
         padding: 0 0 0 .5em;
     }
+    .icon-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0em;
+    }
+    .panda-icon {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 0 .5em .5em;
+    }
+     
 }
+
 
 
 
@@ -155,5 +180,18 @@ nav li {
         margin: .5em;
         background-color: goldenrod;
     }
+    .icon-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0em;
+    }
+    .panda-icon {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 0 .5em .5em;
+    }
+
 
 }
