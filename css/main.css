@@ -18,7 +18,6 @@ body {
 }
 
 header {
-    background-color: goldenrod;
     width: 100%;
     
 }
@@ -31,10 +30,18 @@ nav ul {
 }
  .text_click {
     text-decoration-line: none;
+    color: black;
+}
+.option {
+    background-color: red;
+    
+}
+.option a {
     color: white;
 }
 nav li {
     list-style: none;
+    
 }
  .title {
      width: 100%;
@@ -93,8 +100,17 @@ nav li {
     .lead-content {
         display: flex;
         flex-wrap: nowrap;
+        height: 600px;
     }
-
+    
+    h2 {
+        padding: 0 0 1em 0;
+        height: 40px;
+    }
+    .paragraphs_1-3 {
+        width: 33.33%;
+        padding: 0 0 0 .5em;
+    }
 }
 
 
@@ -114,6 +130,15 @@ nav li {
         flex-wrap: nowrap;
     }
     nav {
+        display: flex;
         justify-content: flex-end;
+    }
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        padding: 0 .5em;
+        margin: .5em;
+        background-color: goldenrod;
     }
 }
