@@ -172,6 +172,8 @@ nav li {
 @media only screen and (min-width: 961px) {
     body {
         background-color: white;
+        max-width: 64em;
+        margin: 1em auto;
     }
     nav {
         display: flex;
