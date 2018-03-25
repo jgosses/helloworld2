@@ -173,7 +173,7 @@ nav li {
     body {
         background-color: white;
         max-width: 64em;
-        margin: 1em auto;
+        margin: 0em auto;
     }
     nav {
         display: flex;
