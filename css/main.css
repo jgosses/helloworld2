@@ -30,7 +30,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px 0 40px;
+    margin: 0em;
 }
  .text_click {
     text-decoration-line: none;
